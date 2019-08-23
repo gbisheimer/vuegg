@@ -27,6 +27,7 @@
     "dialog-polyfill": "^0.4.9",
     "downloadjs": "^1.4.7",
     "es6-promisify": "^5.0.0",
+    "jsoneditor": "^6.3.0",
     "localforage": "^1.7.1",
     "normalize.css": "^7.0.0",
     "oauth-open": "^1.0.3",

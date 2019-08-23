@@ -26,6 +26,7 @@ Vue.use(Tooltip, {
 })
 
 Vue.config.productionTip = false
+Vue.config.devtools = true
 
 /* eslint-disable no-new */
 const vm = new Vue({

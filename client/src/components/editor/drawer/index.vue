@@ -22,7 +22,7 @@
 
     <div class="tab-content">
       <ElementsMenu v-show="showElements"></ElementsMenu>
-      <settings-menu v-show="showSettings"></settings-menu>
+      <all-settings-menu v-show="showSettings"></all-settings-menu>
       <pages-menu v-show="showPages"></pages-menu>
     </div>
   </nav>
@@ -31,7 +31,7 @@
 
 <script>
 import ElementsMenu from './elements/ElementsMenu'
-import SettingsMenu from './settings/SettingsMenu'
+import AllSettingsMenu from './settings/AllSettingsMenu'
 import PagesMenu from './pages/PagesMenu'
 
 import '@/assets/icons/system/widgets'
@@ -40,7 +40,7 @@ import '@/assets/icons/system/page'
 
 export default {
   name: 'drawegg',
-  components: { ElementsMenu, SettingsMenu, PagesMenu },
+  components: { ElementsMenu, AllSettingsMenu, PagesMenu },
   data: function () {
     return {
       showElements: true,
