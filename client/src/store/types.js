@@ -19,6 +19,9 @@ export const componentExist = 'componentExist'
 
 export const getSelectedElIndexById = 'getSelectedElIndexById'
 
+export const getTagById = 'getTagById'
+export const getTagByPath = 'getTagByPath'
+
 // ACTIONS
 export const logIn = 'logIn'
 export const logOut = 'logOut'
@@ -97,6 +100,8 @@ const types = {
   componentExist,
 
   getSelectedElIndexById,
+  getTagById,
+  getTagByPath,
 
 // ACTIONS
   logIn,

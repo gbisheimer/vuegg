@@ -1,6 +1,7 @@
 import pageGetters from './pageGet'
 import elementGetters from './elementGet'
 import componentGetters from './componentGet'
+import tagGetters from './tagGet'
 
 /**
  * Vuex Store Getters
@@ -12,7 +13,8 @@ import componentGetters from './componentGet'
 const getters = {
   ...pageGetters,
   ...elementGetters,
-  ...componentGetters
+  ...componentGetters,
+  ...tagGetters
 }
 
 export default getters

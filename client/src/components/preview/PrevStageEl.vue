@@ -1,12 +1,14 @@
 <script>
 import { mapState } from 'vuex'
 import PrevStageEl from './PrevStageEl'
+import templateParser from '@/mixins/templateParser'
 
 export default {
   name: 'prev-stage-el',
+  mixins: [templateParser],
   props: ['elem'],
   render: function (createElement) {
-    let elementO = (this.elem.global) ? {...this.elem, ...this.componentRef, id: this.elem.id} : this.elem
+    let elementO = this.parseData((this.elem.global) ? {...this.elem, ...this.componentRef, id: this.elem.id} : this.elem)
 
     let styles = elementO.styles
     if (elementO.egglement) {

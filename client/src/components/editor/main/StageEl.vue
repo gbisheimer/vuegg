@@ -4,13 +4,15 @@ import { _clearSelectedElements, _addSelectedElement } from '@/store/types'
 
 import MrEl from '@/components/editor/common/mr-vue/MrEl'
 import StageEl from './StageEl'
+import templateParser from '@/mixins/templateParser'
 
 export default {
   name: 'stage-el',
+  mixins: [templateParser],
   props: ['elem', 'isPlain'],
   components: { MrEl },
   render: function (createElement) {
-    let elementO = (this.elem.global) ? {...this.elem, ...this.componentRef, id: this.elem.id} : this.elem
+    let elementO = this.parseData((this.elem.global) ? {...this.elem, ...this.componentRef, id: this.elem.id} : this.elem)
 
     let styles = elementO.styles
     if (this.isPlain && elementO.egglement) {

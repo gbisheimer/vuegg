@@ -17,6 +17,11 @@ function newState (project) {
       selectedElements: [],
       editorZoom: 1
     },
+    tags: [
+      {id: 1, path: 'true', value: true},
+      {id: 2, path: 'false', value: false},
+      {id: 3, path: 'text', value: 'Texto de prueba'}
+    ],
     oauth: {
       isAuthorized: false,
       authenticatedUser: null
